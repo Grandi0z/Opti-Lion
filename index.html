@@ -13,7 +13,7 @@
 </head>
 <body>
     <section id="home" class="home">
-        <header>
+        <header id="home_header">
             <nav class="navbar navbar-light nav_mobil">
                 <div class="container">
                     <a class="navbar-brand navMobil_links" href="#">
@@ -22,11 +22,10 @@
                     </a>
                 </div>
             </nav>
-            <div class="container-fluid nav_desk">
-              <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav_desk">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <ul class=" d-flex nav_desk_list" id="nav_desk_list">
+            <div class="container-fluid p-0 nav_desk">
+              <nav class="navbar" id="nav_desk_1">
+                <div class="container-fluid d-flex flex-column align-items-end">
+                  <ul class=" d-flex nav_desk_list" id="nav_desk_list_1">
                     <li><a href="https://www.facebook.com/events/1455321544773645/"><i class="bi bi-facebook"></i></a></li>
                     <li><a href="https://twitter.com/cckorea"><i class="bi bi-twitter"></i></a></li>
                     <li><a href="https://radiokapi.cd/" target="_blank">English</a></li>
@@ -35,10 +34,22 @@
                   </ul>
                 </div>
               </nav>
+              <nav class="navbar navbar-light shadow  bg-light" id="nav_desk_2">
+                <div class="container-fluid ">
+                  <a class="navbar-brand logo_top" href="#"><img src="images/logo_top.svg" alt="opti lion logo"></a>
+                  <ul class=" d-flex nav_desk_list" id="nav_desk_list_2">
+                    <li><a href="#" class="selected_link">About</a></li>
+                    <li><a href="#">Program</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Sponsor</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#" class="selected_link" id="link_campain">Opti Lion Campaign</a></li>
+                  </ul>
+                </div>
+              </nav>
             </div>
-
-            <p class="fs-3 red_font" id="welcome_msg">"hello welcome to the future"</p>
-            <h1 class="h1 display-1 red_font main_head" id="main_head" alass >OPTI LION EXHIBITION</h1>
+            <p class="fs-3 red_font welcome_msg" id="welcome_msg">"hello welcome to the future"</p>
+            <h1 class="h1 display-1 red_font main_head welcome_msg" id="main_head"  >OPTI LION EXHIBITION</h1>
         </header>
         <p class="paragraph" id="main_paragraph">A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.</p>
         <article id="expo">
