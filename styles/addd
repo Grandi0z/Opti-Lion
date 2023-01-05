@@ -43,10 +43,8 @@ h2 {
 }
 /* Home section */
 .home {
-    background: url(../images/background/bk_home.png) no-repeat 50% 5%;
-    background-attachment: scroll;
-    background-size: cover;
     background-color: #f7f8f9;
+    margin: 0;
 }
 .home > * {
     margin-left:  12px;
@@ -88,8 +86,7 @@ h2 {
 }
 /* Main program section */
 #main_program {
-    background: url(../images/background/bk_main_program.png) repeat;
-    background-color: #272a32;
+    background-color: rgb(0, 0, 0);
     color: #fff;
     flex-direction: column;
     align-items: center;
@@ -103,7 +100,6 @@ h2 {
     width: 97%;
 }
 .program_item > div {
-    background: transparent;
     background-color: #3B3E45;
     align-items: center;
     justify-content: center;
@@ -116,10 +112,6 @@ h2 {
 }
 .program_icon {
     width: 71px;
-}
-.exhibition_title {
-    text-align: left;
-    margin-left: 20px;
 }
 .program_items_content {
     color: #fff;
@@ -143,8 +135,8 @@ h2 {
 /* speaker section */
 #about {
     display: none;
+    background-color: #f9f9f9;
 }
-
 #speaker_header {
     margin: 47px 0px 40px 0px;
 }
@@ -193,6 +185,7 @@ h2 {
     text-align: left;
     margin-top: 0.7rem;
 }
+
 #btn_more {
     border-radius: 4px;
     width: 95%;
@@ -203,13 +196,22 @@ h2 {
     line-height: 28px;
     text-align: center;
 }
+#about_paragraph {
+    background-color: #fff;
+    border: rgb(220 225 231) solid 1px;
+    width: 95%;
+    margin: 50px auto 3px auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: Center;
+}
 #contact_us {
     color: #7A7A7A;
     font-weight: bold;
     text-align: center;
     font-size: 12px;
     line-height: 25px;
-    background: none;
 }
 #email_us {
     Font-size: 12px;  
@@ -218,12 +220,6 @@ h2 {
     color: #5F5F5F;
     font-weight: bolder;
     line-height: 25px; 
-}
-.home_about {
-    background: url(../images/background/about_mobile.png) no-repeat 30% -1%;
-    background-attachment: scroll;
-    background-size: contain;
-    background-color: #f7f8f9;
 }
 #logo {
     background-color: #fff;
@@ -238,25 +234,16 @@ h2 {
     font-size: 16px;
     line-height: 21px;
 }
+.about_titles {
+    margin: 50px 0 0 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: Center;
+}
 #logo_opti_lion {
     margin: 35px 0 49px 0;
     width: 90%;
-}
-#about_2 {
-    margin-left: 0;
-}
-#about_head,#welcome_2 {
-    text-align: center;
-}
-#about_paragraph {
-    background-color: #fff;
-    border: rgb(220 225 231) solid 1px;
-    width: 90%;
-    margin: 45px auto 3px auto;
-    font-size: 12px;
-    line-height: 25px;
-    text-align: Center;
-    font-weight: 600;
 }
 #past_expo {
     background-color: #fff;
@@ -284,7 +271,7 @@ h2 {
 .lst_expo{
     flex-direction: column;
     list-style: none;
-    margin: 30px -3px 36px auto;
+    margin: 30px 0 36px 0;
     width: 90%;
     row-gap: 29px;
     padding: 0;
@@ -292,13 +279,8 @@ h2 {
 #partner_1 {
     display: none;
 }
-#partner_2 {
-    background-color: #414246;
-    color: #fff;
-    width: 100%;
-    display: flex; 
-    flex-direction:column; 
-    align-items:center;
+#about_2 {
+    display: none;  
 }
 #partner_list {
     list-style: none;
@@ -308,7 +290,7 @@ h2 {
     margin-bottom: 33px;
     padding: 0;
 }
-.partner_list > li >a > img {
+partner_list > li >a > img {
     width: 33%;
     height: inherit;
 }
@@ -318,19 +300,10 @@ h2 {
 #partner_title {
     margin: 39px 0 0 0;  
 }
-footer {
-    display: none;
-}
-#footer_2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center ;
-}
 
 /* DESKTOP VERSION */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
     .home > * {
         margin-left: 0;
     }
@@ -339,9 +312,6 @@ footer {
         background-color: #f7f8f9;
         margin: 0;
         height: 100vh;
-        background: url(../images/background/main_big_bg.png) no-repeat;
-        background-position: center;
-        background-size: cover;
     }
     .nav_mobil {
         display: none;
@@ -420,8 +390,7 @@ footer {
     }
         /* Main program section */
     #main_program {
-        background: url(../images/background/bk_main_program.png) repeat;
-        background-color: #272a32;
+        background-color: rgb(0, 0, 0);
         color: #fff;
         flex-direction: column;
         align-items: center;
@@ -437,7 +406,6 @@ footer {
     }
     .program_item > div {
         flex-direction: column;
-        background: transparent;
         background-color: #3B3E45;
         align-items: center;
         row-gap: 0px;
@@ -463,8 +431,8 @@ footer {
         padding: 0;
     }
     .exhibition_title {
-        text-align: left;
-        margin-left: -20px;
+        text-align:left;
+        margin-left:22px
     }
     .program_items_content {
         color: #fff;
@@ -489,7 +457,10 @@ footer {
     /* speaker section */
     #featured_speaker {
         height: 100vh;
-    }  
+    }
+    #about_2 {
+        display: none;  
+    }
     #speaker_header {
         margin: 47px 0px 40px 0px;
     }
@@ -547,23 +518,9 @@ footer {
         display: none;
     }
 /* ABOUT PAGE */
-.home_about {
-    background-color: #f7f8f9;
-    margin: 0;
-    height: 100vh;
-    background: url(../images/background/about_bk.png) no-repeat;
-    background-position: center;
-    background-size: cover;
-}
     #welcome_2 {
         display: none;
     }
-    #about {
-        display:flex; 
-        flex-direction: column; 
-        align-items:center;
-    }
-
     #about_head {
         margin: 93px 0px 66px 0px;
     }
@@ -626,7 +583,6 @@ footer {
         flex-direction: row;
         column-gap: 29px;
         justify-content: center;
-        margin: 27px 37px 77px 0px;
     }
     #partner_1 {
         display: block;
@@ -634,19 +590,10 @@ footer {
         color: #fff;
         width: 100%;
     }
-    #partner_2 {
-        display: none;
-    }
 
    
     /* ABOUT PAGE */
     /* FOOTER */
-    footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center ;
-    }
     .footer_1 {
         height: 181px;
         font-size: 70px;
@@ -656,9 +603,6 @@ footer {
     }
     .footer_paragrap {
         font-size: 15px;
-        background-color: inherit;
-        text-decoration: none;
-        text-decoration-line: none;
     }
     #footer_2 {
         height: 181px;
@@ -666,8 +610,6 @@ footer {
         margin-top: 0px;
         width: 100%;
         column-gap: 40px;
-        background-color: #414246;
-        color: #fff;
     }
     
 }
