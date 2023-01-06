@@ -16,11 +16,17 @@
         <header id="home_header">
             <nav class="navbar navbar-light nav_mobil">
                 <div class="container">
-                    <a class="navbar-brand navMobil_links" href="#">
+                    <a class="navbar-brand navMobil_links" id="mobile_menu_links">
                         <i class="bi bi-list" id="hamburger"></i>
                         <i class="bi bi-x-lg hidden" id="x_icon"></i>
                     </a>
                 </div>
+            </nav>
+            <nav id="mobile_nemu" class="hiddenNav">
+              <ul id="mobile_menu_liste">
+                  <li class="hiddenListContent"><a href="index.html"> Home</a></li>
+                  <li class="hiddenListContent"><a href="about.html"> About </a></li>
+              </ul>
             </nav>
             <div class="container-fluid p-0 nav_desk">
               <nav class="navbar" id="nav_desk_1">
@@ -36,9 +42,9 @@
               </nav>
               <nav class="navbar navbar-light shadow  bg-light" id="nav_desk_2">
                 <div class="container-fluid ">
-                  <a class="navbar-brand logo_top" href="#"><img src="images/logo_top.svg" alt="opti lion logo"></a>
+                  <a class="navbar-brand logo_top" href="index.html"><img src="images/logo_top.svg" alt="opti lion logo"></a>
                   <ul class=" d-flex nav_desk_list" id="nav_desk_list_2">
-                    <li><a href="#" class="selected_link">About</a></li>
+                    <li><a href="about.html" class="selected_link">About</a></li>
                     <li><a href="#">Program</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">Sponsor</a></li>
