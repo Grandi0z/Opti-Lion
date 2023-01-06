@@ -80,11 +80,12 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [View](...)
+- [View](https://grandi0z.github.io/Opti-Lion/)
+- [Video] (https://www.loom.com/share/00e031046ee64299a95a0c6a52f25d30)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -127,7 +128,6 @@ To deploy this project :
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
