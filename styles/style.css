@@ -453,6 +453,15 @@ footer {
   justify-content: center;
 }
 
+#loto_white {
+  display: none;
+  width: 64px;
+}
+
+#loto_black {
+  display: block;
+}
+
 /* DESKTOP VERSION */
 
 @media screen and (min-width: 768px) {
@@ -603,8 +612,7 @@ footer {
 
   .program_icon {
     width: auto;
-    margin: 0px 8px 0px -17px;
-}
+    margin: 0 8px 0 -17px;
   }
 
   .card-body {
@@ -854,5 +862,14 @@ footer {
     column-gap: 40px;
     background-color: #414246;
     color: #fff;
+  }
+
+  #loto_white {
+    display: block;
+    width: auto;
+  }
+
+  #loto_black {
+    display: none;
   }
 }
